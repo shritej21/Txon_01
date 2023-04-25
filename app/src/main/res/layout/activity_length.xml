@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B99976"
+    tools:context=".Length">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="40dp"
+            android:text="Length Converter"
+            android:textColor="@color/white"
+            android:textSize="34dp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input"
+            android:layout_width="268dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#D2B48C"
+            android:hint="Enter length"
+            android:minHeight="48dp"
+            android:textColor="@color/white"
+            android:textColorHighlight="#D2B48C"
+            android:textColorLink="#D2B48C"
+            android:textCursorDrawable="@color/white" />
+
+        <RadioGroup
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="#00000000"
+            android:backgroundTint="#00000000"
+            android:checkedButton="@id/meter"
+            android:clickable="false"
+            android:paddingBottom="20dp">
+
+            <RadioButton
+                android:id="@+id/meter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#D2B48C"
+                android:text="Meter" />
+
+            <RadioButton
+                android:id="@+id/foot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginBottom="0dp"
+                android:buttonTint="#D2B48C"
+                android:text="Foot" />
+
+            <RadioButton
+                android:id="@+id/mile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="0dp"
+                android:buttonTint="#D2B48C"
+                android:text="Mile" />
+        </RadioGroup>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/convert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="#987554"
+            android:text="Convert"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:hint="Result"
+            android:textColor="@color/white"
+            android:textColorHighlight="#D2B48C"
+            android:textColorLink="#D2B48C"
+            android:textSize="25dp" />
+
+        <RadioGroup
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:checkedButton="@id/foot2"
+            android:paddingTop="10dp">
+
+            <RadioButton
+                android:id="@+id/meter2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#D2B48C"
+                android:text="Meter" />
+
+            <RadioButton
+                android:id="@+id/foot2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#D2B48C"
+                android:text="Foot" />
+
+            <RadioButton
+                android:id="@+id/mile2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#D2B48C"
+                android:text="Mile" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
